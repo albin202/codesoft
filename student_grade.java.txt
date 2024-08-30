@@ -1,0 +1,46 @@
+import java.util.*;
+public class Student_grade
+{   public static void main(String args[])
+    {
+    Scanner sc = new Scanner(System.in);
+    float math,phy,chem,eng,comp;
+    float avg , total;
+    char garde;
+    System.out.println("Enter each subject marks out of 100 :");
+    System.out.print("Enter the Math marks : ");
+    math = sc.nextFloat();
+    System.out.print("Enter the Physics marks : ");
+    phy = sc.nextFloat();
+    System.out.print("Enter the chem marks : ");
+    chem = sc.nextFloat();
+    System.out.print("Enter the English marks : ");
+    eng = sc.nextFloat();
+    System.out.print("Enter the computer marks : ");
+    comp = sc.nextFloat();
+    
+    total=math+phy+chem+eng+comp;
+    avg=total/5;
+    
+    System.out.println("Total mark obtained is : "+ total);
+    System.out.println("Average percentage obtained is : "+avg +" %");
+    if(avg>=90)
+    {
+        System.out.println("Grade Obtained : A");
+    }
+    else if(avg>=70 || avg<=80)
+    {
+        System.out.println("Grade Obtained : B");
+    }
+    else if(avg>=60 || avg<=70)
+    {
+        System.out.println("Grade Obtained : C");
+    }
+    else if(avg<=60 || avg>=50)
+    {
+        System.out.println("Grade Obtained : D");
+    }
+    else 
+    System.out.println("Garde Obtained : F");
+    
+   }
+}
